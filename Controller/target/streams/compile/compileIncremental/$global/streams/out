@@ -1,0 +1,332 @@
+[0m[[0mdebug[0m] [0m[naha] [0m
+[0m[[0mdebug[0m] [0m[naha] Initial source changes: [0m
+[0m[[0mdebug[0m] [0m[naha] 	removed:Set()[0m
+[0m[[0mdebug[0m] [0m[naha] 	added: Set(/home/jayant/Desktop/Controller/fabOutSeqArb.scala, /home/jayant/Desktop/Controller/fifoFabOut.scala, /home/jayant/Desktop/Controller/loadSeq.scala, /home/jayant/Desktop/Controller/globalParameters.scala, /home/jayant/Desktop/Controller/storeSeqDP.scala, /home/jayant/Desktop/Controller/controllerTop.scala, /home/jayant/Desktop/Controller/loadSeqDP.scala, /home/jayant/Desktop/Controller/storeSeq.scala, /home/jayant/Desktop/Controller/fabInSeqDP.scala, /home/jayant/Desktop/Controller/RRArbiter.scala, /home/jayant/Desktop/Controller/fabInSeq.scala, /home/jayant/Desktop/Controller/fabOutSeq.scala, /home/jayant/Desktop/Controller/mainConfigure.scala, /home/jayant/Desktop/Controller/fabricConfigure.scala, /home/jayant/Desktop/Controller/fabOutSeqDP.scala, /home/jayant/Desktop/Controller/controllerConfigure.scala, /home/jayant/Desktop/Controller/customReg.scala, /home/jayant/Desktop/Controller/fabInSeqCtrl.scala, /home/jayant/Desktop/Controller/storeSeqCtrl.scala, /home/jayant/Desktop/Controller/loadSeqCtrl.scala, /home/jayant/Desktop/Controller/memoryBank.scala, /home/jayant/Desktop/Controller/parameters.scala, /home/jayant/Desktop/Controller/fabricConfigureTop.scala, /home/jayant/Desktop/Controller/fabOutSeqTop.scala, /home/jayant/Desktop/Controller/fabOutSeqCtrl.scala, /home/jayant/Desktop/Controller/fifo.scala, /home/jayant/Desktop/Controller/memConfig.scala, /home/jayant/Desktop/Controller/controllerLocalStorage.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] 	modified: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] Invalidated products: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] External API changes: API Changes: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] Modified binary dependencies: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] Initial directly invalidated sources: Set(/home/jayant/Desktop/Controller/fabOutSeqArb.scala, /home/jayant/Desktop/Controller/fifoFabOut.scala, /home/jayant/Desktop/Controller/loadSeq.scala, /home/jayant/Desktop/Controller/globalParameters.scala, /home/jayant/Desktop/Controller/storeSeqDP.scala, /home/jayant/Desktop/Controller/controllerTop.scala, /home/jayant/Desktop/Controller/loadSeqDP.scala, /home/jayant/Desktop/Controller/storeSeq.scala, /home/jayant/Desktop/Controller/fabInSeqDP.scala, /home/jayant/Desktop/Controller/RRArbiter.scala, /home/jayant/Desktop/Controller/fabInSeq.scala, /home/jayant/Desktop/Controller/fabOutSeq.scala, /home/jayant/Desktop/Controller/mainConfigure.scala, /home/jayant/Desktop/Controller/fabricConfigure.scala, /home/jayant/Desktop/Controller/fabOutSeqDP.scala, /home/jayant/Desktop/Controller/controllerConfigure.scala, /home/jayant/Desktop/Controller/customReg.scala, /home/jayant/Desktop/Controller/fabInSeqCtrl.scala, /home/jayant/Desktop/Controller/storeSeqCtrl.scala, /home/jayant/Desktop/Controller/loadSeqCtrl.scala, /home/jayant/Desktop/Controller/memoryBank.scala, /home/jayant/Desktop/Controller/parameters.scala, /home/jayant/Desktop/Controller/fabricConfigureTop.scala, /home/jayant/Desktop/Controller/fabOutSeqTop.scala, /home/jayant/Desktop/Controller/fabOutSeqCtrl.scala, /home/jayant/Desktop/Controller/fifo.scala, /home/jayant/Desktop/Controller/memConfig.scala, /home/jayant/Desktop/Controller/controllerLocalStorage.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] [0m
+[0m[[0mdebug[0m] [0m[naha] Sources indirectly invalidated by:[0m
+[0m[[0mdebug[0m] [0m[naha] 	product: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] 	binary dep: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] 	external source: Set()[0m
+[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set(/home/jayant/Desktop/Controller/fabOutSeqArb.scala, /home/jayant/Desktop/Controller/fifoFabOut.scala, /home/jayant/Desktop/Controller/loadSeq.scala, /home/jayant/Desktop/Controller/globalParameters.scala, /home/jayant/Desktop/Controller/storeSeqDP.scala, /home/jayant/Desktop/Controller/controllerTop.scala, /home/jayant/Desktop/Controller/loadSeqDP.scala, /home/jayant/Desktop/Controller/storeSeq.scala, /home/jayant/Desktop/Controller/fabInSeqDP.scala, /home/jayant/Desktop/Controller/RRArbiter.scala, /home/jayant/Desktop/Controller/fabInSeq.scala, /home/jayant/Desktop/Controller/fabOutSeq.scala, /home/jayant/Desktop/Controller/mainConfigure.scala, /home/jayant/Desktop/Controller/fabricConfigure.scala, /home/jayant/Desktop/Controller/fabOutSeqDP.scala, /home/jayant/Desktop/Controller/controllerConfigure.scala, /home/jayant/Desktop/Controller/customReg.scala, /home/jayant/Desktop/Controller/fabInSeqCtrl.scala, /home/jayant/Desktop/Controller/storeSeqCtrl.scala, /home/jayant/Desktop/Controller/loadSeqCtrl.scala, /home/jayant/Desktop/Controller/memoryBank.scala, /home/jayant/Desktop/Controller/parameters.scala, /home/jayant/Desktop/Controller/fabricConfigureTop.scala, /home/jayant/Desktop/Controller/fabOutSeqTop.scala, /home/jayant/Desktop/Controller/fabOutSeqCtrl.scala, /home/jayant/Desktop/Controller/fifo.scala, /home/jayant/Desktop/Controller/memConfig.scala, /home/jayant/Desktop/Controller/controllerLocalStorage.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] Recompiling all 28 sources: invalidated sources (28) exceeded 50.0% of all sources[0m
+[0m[[0minfo[0m] [0mCompiling 28 Scala sources to /home/jayant/Desktop/Controller/target/scala-2.11/classes...[0m
+[0m[[0mdebug[0m] [0mGetting org.scala-sbt:compiler-interface:0.13.11:component from component compiler for Scala 2.11.7[0m
+[0m[[0mdebug[0m] [0mGetting org.scala-sbt:compiler-interface:0.13.11:component from component compiler for Scala 2.11.7[0m
+[0m[[0mdebug[0m] [0mRunning cached compiler 7920261a, interfacing (CompilerInterface) with Scala compiler version 2.11.7[0m
+[0m[[0mdebug[0m] [0mCalling Scala compiler with arguments  (CompilerInterface):[0m
+[0m[[0mdebug[0m] [0m	-deprecation[0m
+[0m[[0mdebug[0m] [0m	-feature[0m
+[0m[[0mdebug[0m] [0m	-unchecked[0m
+[0m[[0mdebug[0m] [0m	-language:reflectiveCalls[0m
+[0m[[0mdebug[0m] [0m	-bootclasspath[0m
+[0m[[0mdebug[0m] [0m	/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rhino.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/classes:/home/jayant/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar[0m
+[0m[[0mdebug[0m] [0m	-classpath[0m
+[0m[[0mdebug[0m] [0m	/home/jayant/Desktop/Controller/target/scala-2.11/classes:/home/jayant/.ivy2/cache/edu.berkeley.cs/chisel_2.11/jars/chisel_2.11-2.2.32.jar:/home/jayant/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.7.jar[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/controllerConfigure.scala:16: not found: value dataWidth[0m
+[0m[[31merror[0m] [0m		val inConfig		= UInt(INPUT, width = dataWidth)[0m
+[0m[[31merror[0m] [0m		            		                      ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/controllerConfigure.scala:19: not found: value dataWidth[0m
+[0m[[31merror[0m] [0m		val outConfig		= UInt(OUTPUT, width = dataWidth)[0m
+[0m[[31merror[0m] [0m		             		                       ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/controllerConfigure.scala:26: not found: value dataWidth[0m
+[0m[[31merror[0m] [0m	val inDataReg	= Reg(init = UInt(0, width = dataWidth))[0m
+[0m[[31merror[0m] [0m	             	                             ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/controllerTop.scala:8: not found: value dataWidth[0m
+[0m[[31merror[0m] [0m		val inConfig			= UInt(INPUT, width = dataWidth)[0m
+[0m[[31merror[0m] [0m		            			                      ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/controllerTop.scala:11: not found: value lrReqFifoWidth[0m
+[0m[[31merror[0m] [0m		val loadRqst			= UInt(OUTPUT, width = lrReqFifoWidth)[0m
+[0m[[31merror[0m] [0m		            			                       ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/controllerTop.scala:15: not found: value lrRespFifoWidth[0m
+[0m[[31merror[0m] [0m		val loadResp			= UInt(INPUT, width = lrRespFifoWidth)[0m
+[0m[[31merror[0m] [0m		            			                      ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/controllerTop.scala:19: not found: value dataWidth[0m
+[0m[[31merror[0m] [0m		val storeMemData		= UInt(OUTPUT, (dataWidth + extMemAddrWidth))[0m
+[0m[[31merror[0m] [0m		                		                ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/controllerTop.scala:19: not found: value extMemAddrWidth[0m
+[0m[[31merror[0m] [0m		val storeMemData		= UInt(OUTPUT, (dataWidth + extMemAddrWidth))[0m
+[0m[[31merror[0m] [0m		                		                            ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/controllerTop.scala:23: not found: value fabPortCount[0m
+[0m[[31merror[0m] [0m		val fabInData			= Vec.fill(fabPortCount){UInt(OUTPUT, width = datawidth)}[0m
+[0m[[31merror[0m] [0m		             			           ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/controllerTop.scala:23: not found: value datawidth[0m
+[0m[[31merror[0m] [0m		val fabInData			= Vec.fill(fabPortCount){UInt(OUTPUT, width = datawidth)}[0m
+[0m[[31merror[0m] [0m		             			                                              ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/controllerTop.scala:24: not found: value fabPortCount[0m
+[0m[[31merror[0m] [0m		val fabInValid			= Vec.fill(fabPortCount){Bool(OUTPUT)}[0m
+[0m[[31merror[0m] [0m		              			           ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/controllerTop.scala:25: not found: value fabPortCount[0m
+[0m[[31merror[0m] [0m		val fabInRdy			= Vec.fill(fabPortCount){Bool(INPUT)}[0m
+[0m[[31merror[0m] [0m		            			           ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/controllerTop.scala:27: not found: value fabPortCount[0m
+[0m[[31merror[0m] [0m		val fabOut			= Vec.fill(fabPortCount){UInt(INPUT, width = datawidth)}[0m
+[0m[[31merror[0m] [0m		          			           ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/controllerTop.scala:27: not found: value datawidth[0m
+[0m[[31merror[0m] [0m		val fabOut			= Vec.fill(fabPortCount){UInt(INPUT, width = datawidth)}[0m
+[0m[[31merror[0m] [0m		          			                                             ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/controllerTop.scala:28: not found: value fabPortCount[0m
+[0m[[31merror[0m] [0m		val fabOutValid			= Vec.fill(fabPortCount){Bool(INPUT)}[0m
+[0m[[31merror[0m] [0m		               			           ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/controllerTop.scala:29: not found: value fabPortCount[0m
+[0m[[31merror[0m] [0m		val fabOutRdy			= Vec.fill(fabPortCount){Bool(OUTPUT)}[0m
+[0m[[31merror[0m] [0m		             			           ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/controllerTop.scala:37: not found: type fabInSeq[0m
+[0m[[31merror[0m] [0m	val fabInSeqClass		= Module(new fabInSeq)[0m
+[0m[[31merror[0m] [0m	                 		             ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/controllerTop.scala:38: not found: type fabOutSeqTop[0m
+[0m[[31merror[0m] [0m	val fabOutSeqClass		= Module(new fabOutSeqTop)[0m
+[0m[[31merror[0m] [0m	                  		             ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/controllerTop.scala:39: not found: type loadSeq[0m
+[0m[[31merror[0m] [0m	val loadSeqClass		= Module(new loadSeq)[0m
+[0m[[31merror[0m] [0m	                		             ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/controllerTop.scala:40: not found: type storeSeq[0m
+[0m[[31merror[0m] [0m	val storeSeqClass		= Module(new storeSeq)[0m
+[0m[[31merror[0m] [0m	                 		             ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/controllerTop.scala:42: not found: type mainConfigure[0m
+[0m[[31merror[0m] [0m	val mainConfigClass		= Module(new mainConfigure)[0m
+[0m[[31merror[0m] [0m	                   		             ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/controllerTop.scala:43: not found: type fabricConfigureTop[0m
+[0m[[31merror[0m] [0m	val fabConfigClass		= Module(new fabricConfigureTop(dataWidth, 6, 3, 24, 13))[0m
+[0m[[31merror[0m] [0m	                  		             ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/controllerTop.scala:43: not found: value dataWidth[0m
+[0m[[31merror[0m] [0m	val fabConfigClass		= Module(new fabricConfigureTop(dataWidth, 6, 3, 24, 13))[0m
+[0m[[31merror[0m] [0m	                  		                                ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/controllerTop.scala:73: not found: value memBankCount[0m
+[0m[[31merror[0m] [0m	for(i<-0 until memBankCount){[0m
+[0m[[31merror[0m] [0m	               ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/controllerTop.scala:81: not found: value fabPortCount[0m
+[0m[[31merror[0m] [0m	for(i<-0 until fabPortCount){[0m
+[0m[[31merror[0m] [0m	               ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/controllerTop.scala:95: not found: value fabPortCount[0m
+[0m[[31merror[0m] [0m	for(i<-0 until fabPortCount){[0m
+[0m[[31merror[0m] [0m	               ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/controllerTop.scala:101: not found: value memBankCount[0m
+[0m[[31merror[0m] [0m	for(i<-0 until memBankCount){[0m
+[0m[[31merror[0m] [0m	               ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/controllerTop.scala:104: not found: value fabOutSeq[0m
+[0m[[31merror[0m] [0m		fabOutSeq.io.fabOutLocRdy(i)			:= fabInSeqClass.io.fabStoreRdy(i)[0m
+[0m[[31merror[0m] [0m		^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/controllerTop.scala:112: not found: value fabPortCount[0m
+[0m[[31merror[0m] [0m	for(i <-0 until fabPortCount){[0m
+[0m[[31merror[0m] [0m	                ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/fabInSeq.scala:8: not found: value datawidth[0m
+[0m[[31merror[0m] [0m		val inConfig		= UInt(INPUT, width = datawidth)[0m
+[0m[[31merror[0m] [0m		            		                      ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/fabInSeq.scala:11: not found: value fabPortCount[0m
+[0m[[31merror[0m] [0m		val fabInData		= Vec.fill(fabPortCount){UInt(OUTPUT, width = datawidth)}[0m
+[0m[[31merror[0m] [0m		             		           ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/fabInSeq.scala:11: not found: value datawidth[0m
+[0m[[31merror[0m] [0m		val fabInData		= Vec.fill(fabPortCount){UInt(OUTPUT, width = datawidth)}[0m
+[0m[[31merror[0m] [0m		             		                                              ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/fabInSeq.scala:12: not found: value fabPortCount[0m
+[0m[[31merror[0m] [0m		val fabInValid		= Vec.fill(fabPortCount){Bool(OUTPUT)}[0m
+[0m[[31merror[0m] [0m		              		           ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/fabInSeq.scala:13: not found: value fabPortCount[0m
+[0m[[31merror[0m] [0m		val fabInRdy		= Vec.fill(fabPortCount){Bool(INPUT)}[0m
+[0m[[31merror[0m] [0m		            		           ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/fabInSeq.scala:15: not found: value memBankCount[0m
+[0m[[31merror[0m] [0m		val loadStore		= Vec.fill(memBankCount){UInt(INPUT, width = localStorageWidth)}[0m
+[0m[[31merror[0m] [0m		             		           ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/fabInSeq.scala:16: not found: value memBankCount[0m
+[0m[[31merror[0m] [0m		val loadStoreValid	= Vec.fill(memBankCount){Bool(INPUT)}[0m
+[0m[[31merror[0m] [0m		                  	           ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/fabInSeq.scala:17: not found: value memBankCount[0m
+[0m[[31merror[0m] [0m		val loadStoreRdy	= Vec.fill(memBankCount){Bool(OUTPUT)}[0m
+[0m[[31merror[0m] [0m		                	           ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/fabInSeq.scala:19: not found: value memBankCount[0m
+[0m[[31merror[0m] [0m		val fabStore		= Vec.fill(memBankCount){UInt(INPUT, width = localStorageWidth)}[0m
+[0m[[31merror[0m] [0m		            		           ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/fabInSeq.scala:20: not found: value memBankCount[0m
+[0m[[31merror[0m] [0m		val fabStoreValid	= Vec.fill(memBankCount){Bool(INPUT)}[0m
+[0m[[31merror[0m] [0m		                 	           ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/fabInSeq.scala:21: not found: value memBankCount[0m
+[0m[[31merror[0m] [0m		val fabStoreRdy		= Vec.fill(memBankCount){Bool(OUTPUT)}[0m
+[0m[[31merror[0m] [0m		               		           ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/fabInSeqCtrl.scala:9: not found: value datawidth[0m
+[0m[[31merror[0m] [0m		val inConfig			= UInt(INPUT, width = datawidth)[0m
+[0m[[31merror[0m] [0m		            			                      ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/fabInSeqDP.scala:8: not found: value datawidth[0m
+[0m[[31merror[0m] [0m		val inConfig		= UInt(INPUT, width = datawidth)[0m
+[0m[[31merror[0m] [0m		            		                      ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/fabInSeqDP.scala:14: not found: value fabPortCount[0m
+[0m[[31merror[0m] [0m		val fabInData		= Vec.fill(fabPortCount){UInt(OUTPUT, width = datawidth)}[0m
+[0m[[31merror[0m] [0m		             		           ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/fabInSeqDP.scala:14: not found: value datawidth[0m
+[0m[[31merror[0m] [0m		val fabInData		= Vec.fill(fabPortCount){UInt(OUTPUT, width = datawidth)}[0m
+[0m[[31merror[0m] [0m		             		                                              ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/fabInSeqDP.scala:15: not found: value fabPortCount[0m
+[0m[[31merror[0m] [0m		val fabInValid		= Vec.fill(fabPortCount){Bool(OUTPUT)}[0m
+[0m[[31merror[0m] [0m		              		           ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/fabInSeqDP.scala:16: not found: value fabPortCount[0m
+[0m[[31merror[0m] [0m		val fabInRdy		= Vec.fill(fabPortCount){Bool(INPUT)}[0m
+[0m[[31merror[0m] [0m		            		           ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/fabInSeqDP.scala:18: not found: value memBankCount[0m
+[0m[[31merror[0m] [0m		val loadStore		= Vec.fill(memBankCount){UInt(INPUT, width = localStorageWidth)}[0m
+[0m[[31merror[0m] [0m		             		           ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/fabInSeqDP.scala:19: not found: value memBankCount[0m
+[0m[[31merror[0m] [0m		val loadStoreValid	= Vec.fill(memBankCount){Bool(INPUT)}[0m
+[0m[[31merror[0m] [0m		                  	           ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/fabInSeqDP.scala:20: not found: value memBankCount[0m
+[0m[[31merror[0m] [0m		val loadStoreRdy	= Vec.fill(memBankCount){Bool(OUTPUT)}[0m
+[0m[[31merror[0m] [0m		                	           ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/fabInSeqDP.scala:22: not found: value memBankCount[0m
+[0m[[31merror[0m] [0m		val fabStore		= Vec.fill(memBankCount){UInt(INPUT, width = localStorageWidth)}[0m
+[0m[[31merror[0m] [0m		            		           ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/fabInSeqDP.scala:23: not found: value memBankCount[0m
+[0m[[31merror[0m] [0m		val fabStoreValid	= Vec.fill(memBankCount){Bool(INPUT)}[0m
+[0m[[31merror[0m] [0m		                 	           ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/fabInSeqDP.scala:24: not found: value memBankCount[0m
+[0m[[31merror[0m] [0m		val fabStoreRdy		= Vec.fill(memBankCount){Bool(OUTPUT)}[0m
+[0m[[31merror[0m] [0m		               		           ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/fabInSeqDP.scala:31: not found: value memBankCount[0m
+[0m[[31merror[0m] [0m	val localStorage	= Module(new controllerLocalStorage (2, localStorageDepth, localStorageWidth, memBankCount))[0m
+[0m[[31merror[0m] [0m	                	                                                                              ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/fabInSeqDP.scala:43: not found: value fabPortCount[0m
+[0m[[31merror[0m] [0m	val inPortFifo		= Vec.fill(fabPortCount){Module(new fifo(datawidth, 4)).io}[0m
+[0m[[31merror[0m] [0m	              		           ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/fabInSeqDP.scala:43: not found: value datawidth[0m
+[0m[[31merror[0m] [0m	val inPortFifo		= Vec.fill(fabPortCount){Module(new fifo(datawidth, 4)).io}[0m
+[0m[[31merror[0m] [0m	              		                                         ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/fabInSeqDP.scala:44: not found: value fabPortCount[0m
+[0m[[31merror[0m] [0m	for(i<-0 until fabPortCount){[0m
+[0m[[31merror[0m] [0m	               ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/fabInSeqDP.scala:51: not found: value fabPortCount[0m
+[0m[[31merror[0m] [0m	val collectFifo		= Vec.fill(fabPortCount){Module(new fifo(datawidth, 2)).io}[0m
+[0m[[31merror[0m] [0m	               		           ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/fabInSeqDP.scala:51: not found: value datawidth[0m
+[0m[[31merror[0m] [0m	val collectFifo		= Vec.fill(fabPortCount){Module(new fifo(datawidth, 2)).io}[0m
+[0m[[31merror[0m] [0m	               		                                         ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/fabInSeqDP.scala:53: not found: value memBankCount[0m
+[0m[[31merror[0m] [0m	val bankFifo		= Vec.fill(memBankCount){Module(new fifo(datawidth, 4)).io}[0m
+[0m[[31merror[0m] [0m	            		           ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/fabInSeqDP.scala:53: not found: value datawidth[0m
+[0m[[31merror[0m] [0m	val bankFifo		= Vec.fill(memBankCount){Module(new fifo(datawidth, 4)).io}[0m
+[0m[[31merror[0m] [0m	            		                                         ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/memConfig.scala:11: not found: value dataWidth[0m
+[0m[[31merror[0m] [0m		val inConfig		= UInt(INPUT, width = dataWidth) 	[0m
+[0m[[31merror[0m] [0m		            		                      ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/fabInSeqDP.scala:68: not found: value memBankCount[0m
+[0m[[31merror[0m] [0m	val bankReadDoneReg		= Vec.fill(memBankCount){Reg(init = Bool(false))}[0m
+[0m[[31merror[0m] [0m	                   		           ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/fabInSeqDP.scala:69: not found: value memBankCount[0m
+[0m[[31merror[0m] [0m	val bankSeqReg			= Vec.fill(memBankCount){Reg(init = UInt(0, width = fabInpSeqMemWidth-1))}[0m
+[0m[[31merror[0m] [0m	              			           ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/fabInSeqDP.scala:74: not found: value memBankCount[0m
+[0m[[31merror[0m] [0m	val bankReadDone		= Vec.fill(memBankCount){Bool()}[0m
+[0m[[31merror[0m] [0m	                		           ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/fabInSeqDP.scala:75: not found: value memBankCount[0m
+[0m[[31merror[0m] [0m	val readDone			= Vec.fill(memBankCount){Bool()}[0m
+[0m[[31merror[0m] [0m	            			           ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/fabInSeqDP.scala:78: not found: value memBankCount[0m
+[0m[[31merror[0m] [0m	val bankToPort			= Vec.fill(memBankCount){Vec.fill(fabPortCount){UInt(width = datawidth)}}[0m
+[0m[[31merror[0m] [0m	              			           ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/fabInSeqDP.scala:78: not found: value fabPortCount[0m
+[0m[[31merror[0m] [0m	val bankToPort			= Vec.fill(memBankCount){Vec.fill(fabPortCount){UInt(width = datawidth)}}[0m
+[0m[[31merror[0m] [0m	              			                                  ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/fabInSeqDP.scala:78: not found: value datawidth[0m
+[0m[[31merror[0m] [0m	val bankToPort			= Vec.fill(memBankCount){Vec.fill(fabPortCount){UInt(width = datawidth)}}[0m
+[0m[[31merror[0m] [0m	              			                                                             ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/fabInSeqDP.scala:79: not found: value memBankCount[0m
+[0m[[31merror[0m] [0m	val bankToPortValid		= Vec.fill(memBankCount){Vec.fill(fabPortCount){Bool()}}[0m
+[0m[[31merror[0m] [0m	                   		           ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/fabInSeqDP.scala:79: not found: value fabPortCount[0m
+[0m[[31merror[0m] [0m	val bankToPortValid		= Vec.fill(memBankCount){Vec.fill(fabPortCount){Bool()}}[0m
+[0m[[31merror[0m] [0m	                   		                                  ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/fabInSeqDP.scala:84: not found: value memBankCount[0m
+[0m[[31merror[0m] [0m	for(i<-0 until memBankCount){[0m
+[0m[[31merror[0m] [0m	               ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/fabInSeqDP.scala:110: not found: value datawidth[0m
+[0m[[31merror[0m] [0m	val readValuelocStrg		= UInt(width = datawidth)[0m
+[0m[[31merror[0m] [0m	                    		               ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/fabInSeqDP.scala:113: not found: value memBankCount[0m
+[0m[[31merror[0m] [0m	for(bankNo <-0 until memBankCount){[0m
+[0m[[31merror[0m] [0m	                     ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/fabInSeqDP.scala:188: not found: value memBankCount[0m
+[0m[[31merror[0m] [0m	for(i<-0 until memBankCount){[0m
+[0m[[31merror[0m] [0m	               ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/fabInSeqDP.scala:200: not found: value memBankCount[0m
+[0m[[31merror[0m] [0m		for(i<-0 until memBankCount){[0m
+[0m[[31merror[0m] [0m		               ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/fabInSeqDP.scala:225: not found: value datawidth[0m
+[0m[[31merror[0m] [0m	val readValueBankFifo		= UInt(width = datawidth)[0m
+[0m[[31merror[0m] [0m	                     		               ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/fabInSeqDP.scala:228: not found: value memBankCount[0m
+[0m[[31merror[0m] [0m	for(bankNo <-0 until memBankCount){[0m
+[0m[[31merror[0m] [0m	                     ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/fabInSeqDP.scala:252: not found: value fabPortCount[0m
+[0m[[31merror[0m] [0m	for(portNo <-0 until fabPortCount){[0m
+[0m[[31merror[0m] [0m	                     ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/fabInSeqDP.scala:257: not found: value memBankCount[0m
+[0m[[31merror[0m] [0m		val bankVal		= Vec.fill(memBankCount){UInt(width = datawidth)}[0m
+[0m[[31merror[0m] [0m		           		           ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/fabInSeqDP.scala:257: not found: value datawidth[0m
+[0m[[31merror[0m] [0m		val bankVal		= Vec.fill(memBankCount){UInt(width = datawidth)}[0m
+[0m[[31merror[0m] [0m		           		                                      ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/fabInSeqDP.scala:258: not found: value memBankCount[0m
+[0m[[31merror[0m] [0m		val bankValValid	= Vec.fill(memBankCount){Bool()}[0m
+[0m[[31merror[0m] [0m		                	           ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/fabInSeqDP.scala:259: not found: value datawidth[0m
+[0m[[31merror[0m] [0m		val portVal		= UInt(width = datawidth)[0m
+[0m[[31merror[0m] [0m		           		               ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/fabInSeqDP.scala:264: not found: value memBankCount[0m
+[0m[[31merror[0m] [0m		for(bankNo<-0 until memBankCount){[0m
+[0m[[31merror[0m] [0m		                    ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/fabInSeqDP.scala:294: not found: value fabPortCount[0m
+[0m[[31merror[0m] [0m	val enqRdyCollect	= Vec.fill(fabPortCount){Bool()}[0m
+[0m[[31merror[0m] [0m	                 	           ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/fabInSeqDP.scala:296: not found: value fabPortCount[0m
+[0m[[31merror[0m] [0m		for(i<-0 until fabPortCount){[0m
+[0m[[31merror[0m] [0m		               ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/fabInSeqDP.scala:314: not found: value fabPortCount[0m
+[0m[[31merror[0m] [0m		for(i<-0 until fabPortCount){[0m
+[0m[[31merror[0m] [0m		               ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/fabInSeqDP.scala:324: not found: value fabPortCount[0m
+[0m[[31merror[0m] [0m	for(portNo <-0 until fabPortCount){[0m
+[0m[[31merror[0m] [0m	                     ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/fabInSeqDP.scala:341: not found: value fabPortCount[0m
+[0m[[31merror[0m] [0m		for(portNo <-0 until fabPortCount){[0m
+[0m[[31merror[0m] [0m		                     ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/fabInSeqDP.scala:346: not found: value memBankCount[0m
+[0m[[31merror[0m] [0m		for(bankNo <-0 until memBankCount){[0m
+[0m[[31merror[0m] [0m		                     ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/fabInSeqDP.scala:362: not found: value fabPortCount[0m
+[0m[[31merror[0m] [0m		for(portNo <-0 until fabPortCount){[0m
+[0m[[31merror[0m] [0m		                     ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/fabInSeqDP.scala:367: not found: value memBankCount[0m
+[0m[[31merror[0m] [0m		for(bankNo <-0 until memBankCount){[0m
+[0m[[31merror[0m] [0m		                     ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/fabOutSeq.scala:8: not found: value datawidth[0m
+[0m[[31merror[0m] [0m		val inConfig		= UInt(INPUT, width = datawidth)[0m
+[0m[[31merror[0m] [0m		            		                      ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/fabOutSeq.scala:11: not found: value fabPortCount[0m
+[0m[[31merror[0m] [0m		val fabOut		= Vec.fill(fabPortCount){UInt(INPUT, width = datawidth)}[0m
+[0m[[31merror[0m] [0m		          		           ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/fabOutSeq.scala:11: not found: value datawidth[0m
+[0m[[31merror[0m] [0m		val fabOut		= Vec.fill(fabPortCount){UInt(INPUT, width = datawidth)}[0m
+[0m[[31merror[0m] [0m		          		                                             ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/fabOutSeq.scala:12: not found: value fabPortCount[0m
+[0m[[31merror[0m] [0m		val fabOutValid		= Vec.fill(fabPortCount){Bool(INPUT)}[0m
+[0m[[31merror[0m] [0m		               		           ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/fabOutSeq.scala:13: not found: value fabPortCount[0m
+[0m[[31merror[0m] [0m		val fabOutRdy		= Vec.fill(fabPortCount){Bool(OUTPUT)}[0m
+[0m[[31merror[0m] [0m		             		           ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/fabOutSeq.scala:15: not found: value fabPortCount[0m
+[0m[[31merror[0m] [0m		val fabOutStore		= Vec.fill(fabPortCount){UInt(OUTPUT, width = dataWidth)}[0m
+[0m[[31merror[0m] [0m		               		           ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/fabOutSeq.scala:15: not found: value dataWidth[0m
+[0m[[31merror[0m] [0m		val fabOutStore		= Vec.fill(fabPortCount){UInt(OUTPUT, width = dataWidth)}[0m
+[0m[[31merror[0m] [0m		               		                                              ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/fabOutSeq.scala:16: not found: value fabPortCount[0m
+[0m[[31merror[0m] [0m		val fabOutStoreValid	= Vec.fill(fabPortCount){Bool(OUTPUT)}[0m
+[0m[[31merror[0m] [0m		                    	           ^[0m
+[0m[[31merror[0m] [0m/home/jayant/Desktop/Controller/fabOutSeq.scala:17: not found: value fabPortCount[0m
+[0m[[31merror[0m] [0m		val fabOutStoreRdy	= Vec.fill(fabPortCount){Bool(INPUT)}[0m
+[0m[[31merror[0m] [0m		                  	           ^[0m
+[0m[[31merror[0m] [0m219 errors found[0m
+[0m[[0mdebug[0m] [0mCompilation failed (CompilerInterface)[0m
+[0m[[31merror[0m] [0m(compile:[31mcompileIncremental[0m) Compilation failed[0m
