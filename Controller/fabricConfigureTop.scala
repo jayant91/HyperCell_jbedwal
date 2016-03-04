@@ -1,6 +1,7 @@
 package HyperCell
 
 import Chisel._
+import HyperCellParams.GlobalConfig._
 
 class fabricConfigureTop(dataWidth : Int, columns : Int, coordWidth: Int, swConfigRegWidth: Int, cuConfigRegWidth: Int) extends Module{
 

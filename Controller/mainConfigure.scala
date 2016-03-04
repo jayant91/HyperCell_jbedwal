@@ -1,6 +1,7 @@
 package HyperCell
 
 import Chisel._
+import HyperCellParams.GlobalConfig._
 
 class mainConfigure extends Module{
 	val io = new Bundle{

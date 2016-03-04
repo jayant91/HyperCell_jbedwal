@@ -1,6 +1,7 @@
 package HyperCell
 
 import Chisel._
+import HyperCellParams.GlobalConfig._
 import HyperCellParams.fabOutConfig._
 
 class fabOutSeqCtrl extends Module{
@@ -34,6 +35,7 @@ class fabOutSeqCtrl extends Module{
 	val currentIter			= Reg(init = UInt("b0", width = iterCountWidth))
 	
 	val reqDone			= Vec.fill(fabPortCount){Reg(init = Bool(false))}	
+	val reqDoneWire			= Vec.fill(fabPortCount){Bool()}
 	
 	val computeEnable		= Reg(init = Bool(false))
 	

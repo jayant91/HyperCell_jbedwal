@@ -1,6 +1,7 @@
 package HyperCell
 
 import Chisel._
+import HyperCellParams.GlobalConfig._
 
 class controllerLocalStorage (fifoDepth: Int, memDepth: Int, memWidth: Int, bankCount : Int) extends Module{
 	

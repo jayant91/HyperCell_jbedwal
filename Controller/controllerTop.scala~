@@ -1,7 +1,10 @@
-package HyhperCell
+package HyperCell
 
 import Chisel._
+import HyperCellParams.GlobalConfig._
 import HyperCellParams.controllerTopConfig._
+import HyperCellParams.LoadSeqConfig._
+
 
 class controllerTop extends Module{
 	val io 	= new Bundle {
@@ -99,9 +102,9 @@ class controllerTop extends Module{
 	}
 	
 	for(i<-0 until memBankCount){
-		fabInSeqClass.io.fabStore(i)			:= fabOutSeq.io.fabOutLoc(i)
-		fabInSeqClass.io.fabStoreValid(i)		:= fabOutSeq.io.fabOutLocValid(i)
-		fabOutSeq.io.fabOutLocRdy(i)			:= fabInSeqClass.io.fabStoreRdy(i)
+		fabInSeqClass.io.fabStore(i)			:= fabOutSeqClass.io.fabOutLoc(i)
+		fabInSeqClass.io.fabStoreValid(i)		:= fabOutSeqClass.io.fabOutLocValid(i)
+		fabOutSeqClass.io.fabOutLocRdy(i)			:= fabInSeqClass.io.fabStoreRdy(i)
 	}
 	
 	//						:= fabInSeqClass.io.computeDone		//TODO

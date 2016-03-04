@@ -1,4 +1,4 @@
-package HyperCellGlobalParams
+package HyperCellParams
 
 import Chisel._
 

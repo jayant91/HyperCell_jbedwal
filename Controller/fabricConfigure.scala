@@ -1,6 +1,7 @@
 package HyperCell
 
 import Chisel._
+import HyperCellParams.GlobalConfig._
 
 class fabricConfigure(dataWidth : Int, columnIndex : Int, coordWidth: Int, swConfigRegWidth: Int, cuConfigRegWidth: Int ) extends Module{
 	val io 		= new Bundle{

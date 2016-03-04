@@ -1,6 +1,7 @@
 package HyperCell
 
 import Chisel._
+import HyperCellParams.GlobalConfig._
 
 class customReg(memDepth: Int, memWidth: Int) extends Module{
 	

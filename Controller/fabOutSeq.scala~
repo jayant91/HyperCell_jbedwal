@@ -1,6 +1,7 @@
 package HyperCell
 
 import Chisel._
+import HyperCellParams.GlobalConfig._
 import HyperCellParams.fabOutConfig._
 
 class fabOutSeq extends Module{
@@ -28,7 +29,7 @@ class fabOutSeq extends Module{
 	val fabOutCtrl 			= Module(new fabOutSeqCtrl)
 	val fabOutDP			= Vec.fill(fabPortCount){Module(new fabOutSeqDP).io}
 	
-	io.rst				:= fabOutDP(0).io.rst
+	io.rst				:= fabOutDP(0).rst
 	
 	fabOutCtrl.io.inConfig		:= io.inConfig
 	fabOutCtrl.io.inValid		:= io.inValid

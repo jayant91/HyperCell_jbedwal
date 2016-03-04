@@ -1,6 +1,8 @@
+
 package HyperCell
 
 import Chisel._
+import HyperCellParams.GlobalConfig._
 import HyperCellParams.LoadSeqConfig._
 
 
