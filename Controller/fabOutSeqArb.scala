@@ -47,7 +47,7 @@ class fabOutSeqArb extends Module{
 	
 	when((outFifo.io.emptySpace >= UInt(1)) ||  (!muxValid && !anyGrant)){
 		for(i<-0 until fabPortCount){
-			when(inFifo(i).deqValid && !((inFifo(i).emptySpace >= 1) && grantReg(i))){
+			when(inFifo(i).deqValid && !((inFifo(i).emptySpace >= UInt(1)) && grantReg(i))){
 				request(i)	:= Bool(true)
 			}
 			.otherwise{

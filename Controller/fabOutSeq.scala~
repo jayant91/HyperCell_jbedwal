@@ -5,7 +5,7 @@ import HyperCellParams.GlobalConfig._
 import HyperCellParams.fabOutConfig._
 
 class fabOutSeq extends Module{
-	val io 		= new Module{
+	val io 		= new Bundle{
 		val inConfig		= UInt(INPUT, width = datawidth)
 		val inValid		= Bool(INPUT)
 		

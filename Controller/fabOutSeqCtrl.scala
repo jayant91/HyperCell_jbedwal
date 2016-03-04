@@ -162,20 +162,20 @@ class fabOutSeqCtrl extends Module{
 	
 	for(portNo <-0 until fabPortCount){
 		
-		when((~reqDone(i)) && computeEnable){
-			io.seqMemAddr(i)		:= seqMemAddr
-			io.seqMemAddrValid(i)		:= Bool(true)
+		when((~reqDone(portNo)) && computeEnable){
+			io.seqMemAddr(portNo)		:= seqMemAddr
+			io.seqMemAddrValid(portNo)	:= Bool(true)
 		}
 		.otherwise{
-			io.seqMemAddr(i)		:= seqMemAddr
-			io.seqMemAddrValid(i)		:= Bool(false)
+			io.seqMemAddr(portNo)		:= seqMemAddr
+			io.seqMemAddrValid(portNo)	:= Bool(false)
 		}
 		
-		when(io.seqProceed(i)){
-			nextRequest(i)			:= Bool(true)
+		when(io.seqProceed(portNo)){
+			nextRequest(portNo)		:= Bool(true)
 		}
 		.otherwise{
-			nextRequest(i)			:= Bool(false)
+			nextRequest(portNo)		:= Bool(false)
 		}
 	}
 
@@ -198,7 +198,7 @@ class fabOutSeqCtrl extends Module{
 	
 	
 	when(io.inValid){
-		when(io.inConfig(datawidth-1, datawidth -fabSeqWidth) === UInt(259)){
+		when(io.inConfig(datawidth-1, datawidth -fabSeqWidth) === UInt(258)){
 			when(io.inConfig(datawidth -fabSeqWidth -1, datawidth -fabSeqWidth -dWidth) === UInt(0)){
 				when(io.inConfig(xBitNo) === UInt(0)){
 					prologueDepth		:= io.inConfig(prologueSize-1, 0)
@@ -218,6 +218,6 @@ class fabOutSeqCtrl extends Module{
 	}
 	
 	
-	io.computeDone		:= (!computeEnable)
+	computeDone		:= (!computeEnable)
 
 }

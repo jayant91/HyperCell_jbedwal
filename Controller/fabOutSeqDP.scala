@@ -36,7 +36,7 @@ class fabOutSeqDP extends Module{
 	//Memories and FIFO's
 	val fabOutSeqMem	= Module(new customReg(seqMemDepth, seqMemWidth))
 	
-	val fabOutSeqMemConfig	= Module(new memConfig(memType, seqMemAddrWidth, seqMemWidth))		//TODO
+	val fabOutSeqMemConfig	= Module(new memConfig(18, seqMemAddrWidth, seqMemWidth))	
 	fabOutSeqMemConfig.io.inConfig		:= io.inConfig
 	fabOutSeqMemConfig.io.inValid		:= io.inValid
 	
