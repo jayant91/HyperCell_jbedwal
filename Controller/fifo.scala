@@ -1,6 +1,7 @@
 package HyperCell
 
 import Chisel._
+import HyperCellParams.GlobalConfig._
 
 
 
@@ -54,11 +55,11 @@ class fifo (widthParam:Int, depthParam:Int) extends Module{
 	
 }
 
-object fifoMain {
-    def main(args: Array[String]) {
-    
-    	chiselMain(Array[String]("--backend", "v"),
-	() => Module(new fifo(32, 2)))
+//object fifoMain {
+//    def main(args: Array[String]) {
+//    
+//    	chiselMain(Array[String]("--backend", "v"),
+//	() => Module(new fifo(32, 2)))
 
-    }
-}
+//    }
+//}

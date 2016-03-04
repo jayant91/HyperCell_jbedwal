@@ -1,6 +1,7 @@
 package HyperCell
 
 import Chisel._
+import HyperCellParams.GlobalConfig._
 import HyperCellParams.LoadSeqConfig._
 
 class loadSeqCtrl extends Module{
@@ -173,11 +174,11 @@ class loadSeqCtrl extends Module{
 	
 }
 
-object loadSeqCtrlMain {
-    def main(args: Array[String]) {
-    
-    	chiselMain(Array[String]("--backend", "v"),
-	() => Module(new loadSeqCtrl()))
+//object loadSeqCtrlMain {
+//    def main(args: Array[String]) {
+//    
+//    	chiselMain(Array[String]("--backend", "v"),
+//	() => Module(new loadSeqCtrl()))
 
-    }
-}
+//    }
+//}

@@ -1,6 +1,7 @@
 package HyperCell
 
 import Chisel._
+import HyperCellParams.GlobalConfig._
 
 class RRArbiter(inputCount : Int) extends Module{
 	val io 		= new Bundle{

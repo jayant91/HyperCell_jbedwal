@@ -1,6 +1,7 @@
 package HyperCell
 
 import Chisel._
+import HyperCellParams.GlobalConfig._
 
 class fabricConfigure(dataWidth : Int, columnIndex : Int, coordWidth: Int, swConfigRegWidth: Int, cuConfigRegWidth: Int ) extends Module{
 	val io 		= new Bundle{
@@ -67,11 +68,11 @@ class fabricConfigure(dataWidth : Int, columnIndex : Int, coordWidth: Int, swCon
 
 }
 
-object fabricConfigureMain {
-    def main(args: Array[String]) {
-    
-    	chiselMain(Array[String]("--backend", "v"),
-	() => Module(new fabricConfigure(32, 1, 3, 24, 13)))
+//object fabricConfigureMain {
+//    def main(args: Array[String]) {
+//    
+//    	chiselMain(Array[String]("--backend", "v"),
+//	() => Module(new fabricConfigure(32, 1, 3, 24, 13)))
 
-    }
-}
+//    }
+//}

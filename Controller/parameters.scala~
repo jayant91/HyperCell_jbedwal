@@ -3,19 +3,6 @@ package HyperCellParams
 import Chisel._
 import HyperCellParams.GlobalConfig._
 
-object GlobalConfig {
-	val memBanks			= 8
- 	val memDepth			= 64
-	val memWidth			= 32
-	val memAddrWidth		= log2Up(memDepth)
-
-	val dataWidth			= 32
-	val datawidth			= dataWidth
-	
-	val memBankCount		= 8
-	val fabPortCount		= 20
-}
-
 object MemConfig {
 	
 	val lsMemVar		= 2
@@ -173,6 +160,15 @@ object fabOutConfig{
 	val iterCountWidth		= 32
 	
 	val fabOutLocDataWidth		= bankInfoWidth
+	
+	val fabSeqWidth			= 10
+	val dWidth			= 3
+	val xBitNo			= 17
+	val prologueSize		= 7	//No of bits defining prologue depths
+	val epilogueSize		= 7
+	val steadyStateSize		= 10
+	val epilogueSpillSize		= 10
+	val iterCntSize			= 19
 }
 
 object controllerTopConfig{
