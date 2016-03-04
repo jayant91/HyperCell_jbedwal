@@ -55,6 +55,11 @@ class fabOutSeqArb extends Module{
 			}
 		}
 	}
+	.otherwise{
+		for(i<-0 until fabPortCount){
+			request(i)		:= Bool(false)
+		}
+	}
 	
 	for(i<-0 until fabPortCount){
 		arb.io.request(i)		:= request(i)
@@ -98,6 +103,12 @@ class fabOutSeqArb extends Module{
 		}
 		
 		outFifo.io.rst		:= Bool(true)
+	}
+	.otherwise{
+		for(i<-0 until fabPortCount){
+			inFifo(i).rst	:= Bool(false)
+		}
+		outFifo.io.rst		:= Bool(false)
 	}	
 	
 	

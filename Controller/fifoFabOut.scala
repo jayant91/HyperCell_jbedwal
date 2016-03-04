@@ -32,6 +32,8 @@ class fifoFabOut (widthParam:Int, depthParam:Int) extends Module{
 	val enqPtrInc	= (enqPtr + UInt(1))%(UInt(depthParam))
 	val isFullNext	= Mux(doEnq && ~doDeq && (enqPtrInc === deqPtr), Bool(true), Mux(doDeq && isFull, Bool(false), isFull))
 	val emptySpace  = UInt(width = addrWidth)
+	val rst		= Bool()
+	
 	
 	when(isFullNext){
 		emptySpace		:= UInt(0)
@@ -69,7 +71,9 @@ class fifoFabOut (widthParam:Int, depthParam:Int) extends Module{
 	
 	val fifoMem = Mem(UInt(width=widthParam), depthParam)
 	
-	when(io.rst){
+	rst 		:= io.rst
+	
+	when(rst){
 		enqPtr		:= UInt(0, width = addrWidth)
 		deqPtr		:= UInt(0, width = addrWidth)
 		isFull		:= Bool(false)

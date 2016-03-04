@@ -121,6 +121,11 @@ class fabOutSeqCtrl extends Module{
 			}
 		}
 	}
+	.otherwise{
+		for(i<-0 until fabPortCount){
+			reqDoneWire(i)		:= Bool(false)
+		}
+	}
 	
 	
 			
@@ -218,6 +223,6 @@ class fabOutSeqCtrl extends Module{
 	}
 	
 	
-	io.computeDone		:= (!computeEnable)
+	computeDone		:= (!computeEnable)
 
 }

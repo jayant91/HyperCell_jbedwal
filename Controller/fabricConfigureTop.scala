@@ -25,11 +25,11 @@ class fabricConfigureTop(dataWidth : Int, columns : Int, coordWidth: Int, swConf
 	
 }
 
-object fabricConfigureTopMain {
-    def main(args: Array[String]) {
-    
-    	chiselMain(Array[String]("--backend", "v"),
-	() => Module(new fabricConfigureTop(32, 6, 3, 24, 13)))
+//object fabricConfigureTopMain {
+//    def main(args: Array[String]) {
+//    
+//    	chiselMain(Array[String]("--backend", "v"),
+//	() => Module(new fabricConfigureTop(32, 6, 3, 24, 13)))
 
-    }
-}
+//    }
+//}

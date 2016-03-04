@@ -36,7 +36,7 @@ class fabOutSeqDP extends Module{
 	//Memories and FIFO's
 	val fabOutSeqMem	= Module(new customReg(seqMemDepth, seqMemWidth))
 	
-	val fabOutSeqMemConfig	= Module(new memConfig(memType, seqMemAddrWidth, seqMemWidth))		//TODO
+	val fabOutSeqMemConfig	= Module(new memConfig(18, seqMemAddrWidth, seqMemWidth))	
 	fabOutSeqMemConfig.io.inConfig		:= io.inConfig
 	fabOutSeqMemConfig.io.inValid		:= io.inValid
 	
@@ -96,9 +96,11 @@ class fabOutSeqDP extends Module{
 		io.seqProceed		:= Bool(false)
 	}
 	
+	fabOutSeqMem.io.readAddr	:= io.seqMemAddr
+	fabOutSeqMem.io.readEn		:= io.seqMemAddrValid
+		
 	when((~fabOutLocStrgValid) || getNextSeq){
-		fabOutSeqMem.io.readAddr	:= io.seqMemAddr
-		fabOutSeqMem.io.readEn		:= io.seqMemAddrValid
+		
 		nextSeq				:= fabOutSeqMem.io.outData
 		
 		

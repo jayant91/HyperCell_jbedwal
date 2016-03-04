@@ -442,14 +442,14 @@ class loadSeqDP extends Module{
 
 
 
-object loadSeqDPMain {
-    def main(args: Array[String]) {
-    
-    	chiselMain(Array[String]("--backend", "v"),
-	() => Module(new loadSeqDP()))
+//object loadSeqDPMain {
+//    def main(args: Array[String]) {
+//    
+//    	chiselMain(Array[String]("--backend", "v"),
+//	() => Module(new loadSeqDP()))
 
-    }
-}
+//    }
+//}
 
 
 

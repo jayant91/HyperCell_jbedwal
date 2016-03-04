@@ -31,9 +31,9 @@ class controllerTop extends Module{
 		val fabOutValid			= Vec.fill(fabPortCount){Bool(INPUT)}
 		val fabOutRdy			= Vec.fill(fabPortCount){Bool(OUTPUT)}
 		
-		val computeDone			= Bool()
-		val storeDone			= Bool()
-		val loadDone			= Bool()
+//		val computeDone			= Bool()
+//		val storeDone			= Bool()
+//		val loadDone			= Bool()
 		
 	}
 	

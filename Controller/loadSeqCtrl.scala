@@ -174,11 +174,11 @@ class loadSeqCtrl extends Module{
 	
 }
 
-object loadSeqCtrlMain {
-    def main(args: Array[String]) {
-    
-    	chiselMain(Array[String]("--backend", "v"),
-	() => Module(new loadSeqCtrl()))
+//object loadSeqCtrlMain {
+//    def main(args: Array[String]) {
+//    
+//    	chiselMain(Array[String]("--backend", "v"),
+//	() => Module(new loadSeqCtrl()))
 
-    }
-}
+//    }
+//}

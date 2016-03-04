@@ -156,10 +156,10 @@ class memConfigTest(c: memConfig) extends Tester(c){
 	
 }
 
-object memConfigMain {
-    def main(args: Array[String]) {
-	chiselMainTest(Array[String]("--backend", "c", "--genHarness",  "--debug", "--compile", "--test"),
-	() => Module(new memConfig(2, 5, 40))){c => new memConfigTest(c)}
-    }
-}
+//object memConfigMain {
+//    def main(args: Array[String]) {
+//	chiselMainTest(Array[String]("--backend", "c", "--genHarness",  "--debug", "--compile", "--test"),
+//	() => Module(new memConfig(2, 5, 40))){c => new memConfigTest(c)}
+//    }
+//}
 

@@ -96,9 +96,11 @@ class fabOutSeqDP extends Module{
 		io.seqProceed		:= Bool(false)
 	}
 	
+	fabOutSeqMem.io.readAddr	:= io.seqMemAddr
+	fabOutSeqMem.io.readEn		:= io.seqMemAddrValid
+		
 	when((~fabOutLocStrgValid) || getNextSeq){
-		fabOutSeqMem.io.readAddr	:= io.seqMemAddr
-		fabOutSeqMem.io.readEn		:= io.seqMemAddrValid
+		
 		nextSeq				:= fabOutSeqMem.io.outData
 		
 		
