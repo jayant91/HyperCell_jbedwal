@@ -26,8 +26,8 @@ class HyperCellFabric[T <: Data] (gen: T, rows: Int, columns: Int) extends Modul
 	val io = new Bundle{
 		val inData 	= Vec.fill(2*m + 2*n -4){gen.clone.asInput}
 		val outData	= Vec.fill(2*m + 2*n -4){gen.clone.asOutput}
-		val enqRdy	= Vec.fill(2*m + 2*n -4){UInt(width=1).asInput}			//Confirm names
-		val deqValid	= Vec.fill(2*m + 2*n -4){UInt(width=1).asInput}			//Confirm names
+		val enqRdy	= Vec.fill(2*m + 2*n -4){UInt(width=1).asInput}	
+		val deqValid	= Vec.fill(2*m + 2*n -4){UInt(width=1).asInput}			
 		val deqRdy	= Vec.fill(2*m + 2*n -4){UInt(width=1).asOutput}	
 		val enqValid	= Vec.fill(2*m + 2*n -4){UInt(width=1).asOutput}
 	}
@@ -431,156 +431,156 @@ class HyperCellFabric[T <: Data] (gen: T, rows: Int, columns: Int) extends Modul
 }
 
 
-class HyperCellFabricTest(c: HyperCellFabric[UInt]) extends Tester(c){	
-	val fileName	: String	= "config"
-	
-	var node 	: Int		= 0
-	var nline	: String	= null
-	
-	//val range = scala.math.pow(2, 32).toInt
-	val range : Int = 1000
-	 
-	// FileReader reads text files in the default encoding.
-	val fileReader =  new FileReader(fileName)
-	 	
-	// Always wrap FileReader in BufferedReader.
-	val bufferedReader = new BufferedReader(fileReader)
-        for(i<-0 until 36)
-        {    
-                nline	= bufferedReader.readLine()
-		node	= Integer.parseInt(nline, 10)
-		nline	= bufferedReader.readLine()
-				
-		poke(c.io.inData(node),  java.lang.Long.parseLong(nline, 2))
-		poke(c.io.deqValid(node), 0x1)
-		poke(c.io.enqRdy(node), 0x1)
+//class HyperCellFabricTest(c: HyperCellFabric[UInt]) extends Tester(c){	
+//	val fileName	: String	= "config"
+//	
+//	var node 	: Int		= 0
+//	var nline	: String	= null
+//	
+//	//val range = scala.math.pow(2, 32).toInt
+//	val range : Int = 1000
+//	 
+//	// FileReader reads text files in the default encoding.
+//	val fileReader =  new FileReader(fileName)
+//	 	
+//	// Always wrap FileReader in BufferedReader.
+//	val bufferedReader = new BufferedReader(fileReader)
+//        for(i<-0 until 36)
+//        {    
+//                nline	= bufferedReader.readLine()
+//		node	= Integer.parseInt(nline, 10)
+//		nline	= bufferedReader.readLine()
+//				
+//		poke(c.io.inData(node),  java.lang.Long.parseLong(nline, 2))
+//		poke(c.io.deqValid(node), 0x1)
+//		poke(c.io.enqRdy(node), 0x1)
+//		
+//		step(1)
+//		
+//		nline	= bufferedReader.readLine()
+//		poke(c.io.inData(node),  java.lang.Long.parseLong(nline, 2))
+//		poke(c.io.deqValid(node), 0x1)
+//		poke(c.io.enqRdy(node), 0x1)	
+//		
+//		step(1)
+//        
+//        }
+//        
+//        step(5)
+//        
+//        for(i<-0 until 6){
+//        	for(j<-0 until 6){
+//        		peek(c.switchClass(i)(j).sConfigReg)
+//        		peek(c.switchClass(i)(j).cuConfigReg)
+//        	}
+//        }
+//        
+//        for(i<-0 until 5)
+//        {
+//       		step(1)
+//       		var i0  : Int = rnd.nextInt(range)
+//       	 	var i1  : Int = rnd.nextInt(range)
+//		var i2  : Int = rnd.nextInt(range)
+//		var i3  : Int = rnd.nextInt(range)
+//		var i5  : Int = rnd.nextInt(range)
+//		var i6  : Int = rnd.nextInt(range)
+//		var i7  : Int = rnd.nextInt(range)
+//		var i8  : Int = rnd.nextInt(range)
+//		var i9  : Int = rnd.nextInt(range)
+//		var i10 : Int = rnd.nextInt(range)
+//		var i11 : Int = rnd.nextInt(range)
+//		var i12 : Int = rnd.nextInt(range)
+//		var i13 : Int = rnd.nextInt(range)
+//		var i14 : Int = rnd.nextInt(range)
+//		var i15 : Int = rnd.nextInt(range)
+//		var i16 : Int = rnd.nextInt(range)
+//		var i17 : Int = rnd.nextInt(range)
+//		var i18 : Int = rnd.nextInt(range)
+//		var i19 : Int = rnd.nextInt(range)
+
+
+//		poke(c.io.inData(0),  i0)
+//		poke(c.io.deqValid(0), 0x1)
+//		poke(c.io.enqRdy(0), 0x1)
+//		poke(c.io.inData(1),  i1)
+//		poke(c.io.deqValid(1), 0x1)
+//		poke(c.io.enqRdy(1), 0x1)
+//		poke(c.io.inData(2),  i2)
+//		poke(c.io.deqValid(2), 0x1)
+//		poke(c.io.enqRdy(2), 0x1)
+//		poke(c.io.inData(3),  i3)
+//		poke(c.io.deqValid(3), 0x1)
+//		poke(c.io.enqRdy(3), 0x1)
+//		poke(c.io.inData(5),  i5)
+//		poke(c.io.deqValid(5), 0x1)
+//		poke(c.io.enqRdy(5), 0x1)
+//		poke(c.io.inData(6),  i6)
+//		poke(c.io.deqValid(6), 0x1)
+//		poke(c.io.enqRdy(6), 0x1)
+//		poke(c.io.inData(7),  i7)
+//		poke(c.io.deqValid(7), 0x1)
+//		poke(c.io.enqRdy(7), 0x1)
+//		poke(c.io.inData(8),  i8)
+//		poke(c.io.deqValid(8), 0x1)
+//		poke(c.io.enqRdy(8), 0x1)
+//		poke(c.io.inData(9),  i9)
+//		poke(c.io.deqValid(9), 0x1)
+//		poke(c.io.enqRdy(9), 0x1)
+//		poke(c.io.inData(10),  i10)
+//		poke(c.io.deqValid(10), 0x1)
+//		poke(c.io.enqRdy(10), 0x1)
+//		poke(c.io.inData(11),  i11)
+//		poke(c.io.deqValid(11), 0x1)
+//		poke(c.io.enqRdy(11), 0x1)
+//		poke(c.io.inData(12),  i12)
+//		poke(c.io.deqValid(12), 0x1)
+//		poke(c.io.enqRdy(12), 0x1)
+//		poke(c.io.inData(13),  i13)
+//		poke(c.io.deqValid(13), 0x1)
+//		poke(c.io.enqRdy(13), 0x1)
+//		poke(c.io.inData(14),  i14)
+//		poke(c.io.deqValid(14), 0x1)
+//		poke(c.io.enqRdy(14), 0x1)
+//		poke(c.io.inData(15),  i15)
+//		poke(c.io.deqValid(15), 0x1)
+//		poke(c.io.enqRdy(15), 0x1)
+//		poke(c.io.inData(16),  i16)
+//		poke(c.io.deqValid(16), 0x1)
+//		poke(c.io.enqRdy(16), 0x1)
+//		poke(c.io.inData(17),  i17)
+//		poke(c.io.deqValid(17), 0x1)
+//		poke(c.io.enqRdy(17), 0x1)
+//		poke(c.io.inData(18),  i18)
+//		poke(c.io.deqValid(18), 0x1)
+//		poke(c.io.enqRdy(18), 0x1)
+//		poke(c.io.inData(19),  i19)
+//		poke(c.io.deqValid(19), 0x1)
+//		poke(c.io.enqRdy(19), 0x1)
+
+//	
+//	
+//	
+//	}	
+//	
+//      
+//        // Always close files.
+//        bufferedReader.close();         
+
+//}		
 		
-		step(1)
-		
-		nline	= bufferedReader.readLine()
-		poke(c.io.inData(node),  java.lang.Long.parseLong(nline, 2))
-		poke(c.io.deqValid(node), 0x1)
-		poke(c.io.enqRdy(node), 0x1)	
-		
-		step(1)
-        
-        }
-        
-        step(5)
-        
-        for(i<-0 until 6){
-        	for(j<-0 until 6){
-        		peek(c.switchClass(i)(j).sConfigReg)
-        		peek(c.switchClass(i)(j).cuConfigReg)
-        	}
-        }
-        
-        for(i<-0 until 5)
-        {
-       		step(1)
-       		var i0  : Int = rnd.nextInt(range)
-       	 	var i1  : Int = rnd.nextInt(range)
-		var i2  : Int = rnd.nextInt(range)
-		var i3  : Int = rnd.nextInt(range)
-		var i5  : Int = rnd.nextInt(range)
-		var i6  : Int = rnd.nextInt(range)
-		var i7  : Int = rnd.nextInt(range)
-		var i8  : Int = rnd.nextInt(range)
-		var i9  : Int = rnd.nextInt(range)
-		var i10 : Int = rnd.nextInt(range)
-		var i11 : Int = rnd.nextInt(range)
-		var i12 : Int = rnd.nextInt(range)
-		var i13 : Int = rnd.nextInt(range)
-		var i14 : Int = rnd.nextInt(range)
-		var i15 : Int = rnd.nextInt(range)
-		var i16 : Int = rnd.nextInt(range)
-		var i17 : Int = rnd.nextInt(range)
-		var i18 : Int = rnd.nextInt(range)
-		var i19 : Int = rnd.nextInt(range)
 
-
-		poke(c.io.inData(0),  i0)
-		poke(c.io.deqValid(0), 0x1)
-		poke(c.io.enqRdy(0), 0x1)
-		poke(c.io.inData(1),  i1)
-		poke(c.io.deqValid(1), 0x1)
-		poke(c.io.enqRdy(1), 0x1)
-		poke(c.io.inData(2),  i2)
-		poke(c.io.deqValid(2), 0x1)
-		poke(c.io.enqRdy(2), 0x1)
-		poke(c.io.inData(3),  i3)
-		poke(c.io.deqValid(3), 0x1)
-		poke(c.io.enqRdy(3), 0x1)
-		poke(c.io.inData(5),  i5)
-		poke(c.io.deqValid(5), 0x1)
-		poke(c.io.enqRdy(5), 0x1)
-		poke(c.io.inData(6),  i6)
-		poke(c.io.deqValid(6), 0x1)
-		poke(c.io.enqRdy(6), 0x1)
-		poke(c.io.inData(7),  i7)
-		poke(c.io.deqValid(7), 0x1)
-		poke(c.io.enqRdy(7), 0x1)
-		poke(c.io.inData(8),  i8)
-		poke(c.io.deqValid(8), 0x1)
-		poke(c.io.enqRdy(8), 0x1)
-		poke(c.io.inData(9),  i9)
-		poke(c.io.deqValid(9), 0x1)
-		poke(c.io.enqRdy(9), 0x1)
-		poke(c.io.inData(10),  i10)
-		poke(c.io.deqValid(10), 0x1)
-		poke(c.io.enqRdy(10), 0x1)
-		poke(c.io.inData(11),  i11)
-		poke(c.io.deqValid(11), 0x1)
-		poke(c.io.enqRdy(11), 0x1)
-		poke(c.io.inData(12),  i12)
-		poke(c.io.deqValid(12), 0x1)
-		poke(c.io.enqRdy(12), 0x1)
-		poke(c.io.inData(13),  i13)
-		poke(c.io.deqValid(13), 0x1)
-		poke(c.io.enqRdy(13), 0x1)
-		poke(c.io.inData(14),  i14)
-		poke(c.io.deqValid(14), 0x1)
-		poke(c.io.enqRdy(14), 0x1)
-		poke(c.io.inData(15),  i15)
-		poke(c.io.deqValid(15), 0x1)
-		poke(c.io.enqRdy(15), 0x1)
-		poke(c.io.inData(16),  i16)
-		poke(c.io.deqValid(16), 0x1)
-		poke(c.io.enqRdy(16), 0x1)
-		poke(c.io.inData(17),  i17)
-		poke(c.io.deqValid(17), 0x1)
-		poke(c.io.enqRdy(17), 0x1)
-		poke(c.io.inData(18),  i18)
-		poke(c.io.deqValid(18), 0x1)
-		poke(c.io.enqRdy(18), 0x1)
-		poke(c.io.inData(19),  i19)
-		poke(c.io.deqValid(19), 0x1)
-		poke(c.io.enqRdy(19), 0x1)
-
-	
-	
-	
-	}	
-	
-      
-        // Always close files.
-        bufferedReader.close();         
-
-}		
-		
-
-object HyperCellFabricMain {
-    def main(args: Array[String]) {
-	chiselMainTest(Array[String]("--backend", "v",  "--debug",  "--test",  "--genHarness"),
-	() => Module(new HyperCellFabric[UInt](UInt(width=33), 6 ,6))){c => new HyperCellFabricTest(c)}
-    }
-}
+//object HyperCellFabricMain {
+//    def main(args: Array[String]) {
+//	chiselMainTest(Array[String]("--backend", "v",  "--debug",  "--test",  "--genHarness"),
+//	() => Module(new HyperCellFabric[UInt](UInt(width=33), 6 ,6))){c => new HyperCellFabricTest(c)}
+//    }
+//}
 
 
 
-//object HyperCellMeshMain {
+//object HyperCellFabricMain {
 //    def main(args: Array[String]) {
 //	chiselMain(Array[String]("--backend", "v"),
-//	() => Module(new HyperCellMesh[UInt](UInt(width=32), 6 ,6, 8)))
+//	() => Module(new HyperCellFabric[UInt](UInt(width=33), 6 ,6)))
 //    }
 //}

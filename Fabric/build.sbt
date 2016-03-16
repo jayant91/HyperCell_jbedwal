@@ -1,4 +1,4 @@
-scalaVersion:="2.10.5"
+scalaVersion:="2.11.7"
+crossScalaVersions := Seq("2.10.6", "2.11.7")
 scalacOptions ++= Seq("-deprecation", "-feature", "-unchecked", "-language:reflectiveCalls")
-addSbtPlugin("com.github.scct"%"sbt-scct"%"0.2")
-libraryDependencies+="edu.berkeley.cs"%%"chisel"%"latest.release"
+libraryDependencies+="edu.berkeley.cs"%%"chisel"%"2.2.29"
